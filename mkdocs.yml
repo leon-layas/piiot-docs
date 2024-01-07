@@ -1,0 +1,76 @@
+site_name: piIoT
+site_url: 
+repo_url: https://github.com/mrlayas
+repo_name: 
+copyright: piIoT reserved 2024
+site_dir: wiki
+edit_uri: 'wiki/edit/master/docs'
+nav:
+    - Home: index.md
+    - <b>Getting Started</b>:
+        - IoT applications: iot-apps.md
+        - Install: install.md
+        - Starting platform applications: start.md
+    - <b>IoT Applications</b>:
+        - Platform-1: platform-1.md
+        - Platform-2: platform-2.md
+        - Platform-3: platform-3.md
+    - <b>Real-Time Servers</b>:
+        - RT-M2M server-1: realtime-server-1.md
+        - LoRaWAN server: lora-server-1.md
+    - <b>Global Positioning</b>:
+        - GNSS: gnss.md
+    - <b>Hardware Devices</b>:
+        - LoRaWAN: lora.md
+        - 4G LTE: 4g.md
+        - 5G: 5g.md
+    - <b>Integration</b>:
+        - Integrate: integrate.md
+        - Sync devices with platform: sync.md
+    - <b>Usage</b>:
+        - Usage: usage.md
+    - <b>Troubleshooting</b>:
+        - Troubleshoot: troubleshoot.md
+    - <b>FAQ's</b>:
+        - FAQ's: faqs.md
+    - <b>Support</b>:
+        - Support: support.md
+    
+
+theme:
+  name: material
+  features:
+    #- navigation.tabs
+    - navigation.instant
+  language: en
+  palette:
+    - scheme: slate
+      toggle:
+        icon: material/toggle-switch-off-outline 
+        name: Switch to dark mode
+    #   primary: purple
+    #   accent: purple 
+    - scheme: default
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to light mode    
+    #   primary: purple
+    #   accent: lime
+plugins:
+   - search
+   - minify
+markdown_extensions:
+  - admonition
+  - codehilite:
+      guess_lang: false
+  - toc:
+      permalink: true
+  - pymdownx.mark
+  - pymdownx.details
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.superfences
+  - attr_list
+  - pymdownx.snippets:
+      base_path: docs/Snippets
+      check_paths: true
